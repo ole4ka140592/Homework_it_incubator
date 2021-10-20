@@ -1,0 +1,27 @@
+.content {
+  display: flex;
+}
+
+.name {
+  width: 150px;
+}
+
+.priority {
+  width: 150px;
+}
+
+.button {
+  width: 60px;
+  height: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.buttonActive {
+  width: 60px;
+  height: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: #4a4a4d;
+  color: white;
+}

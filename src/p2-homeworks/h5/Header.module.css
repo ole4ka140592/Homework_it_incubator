@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    width: 290px;
+    transform: translate(-250px);
+    transition-duration: 1000ms;
+    text-decoration: none;
+    color: black;
+}
+
+.noActive {
+    color: black;
+    outline: none;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.noActive:focus {
+    color: red;
+}
+
+.navbar:hover {
+    transition-duration: 1000ms;
+    transform: translate(0px);
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #42b72a;
+}

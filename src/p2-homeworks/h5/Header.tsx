@@ -9,8 +9,8 @@ function Header() {
     return (
             <div className={classes.navbar}>
                 <NavLink to={PATH.PRE_JUNIOR} className={classes.noActive}>pre_junior</NavLink>
-                <NavLink to={PATH.JUNIOR_PLUS} className={classes.noActive}>pre_junior</NavLink>
-                <NavLink to={PATH.JUNIOR} className={classes.noActive}>pre_junior</NavLink>
+                <NavLink to={PATH.JUNIOR_PLUS} className={classes.noActive}>junior_plus</NavLink>
+                <NavLink to={PATH.JUNIOR} className={classes.noActive}>junior</NavLink>
                 <div className={classes.circle}/>
             </div>
     )

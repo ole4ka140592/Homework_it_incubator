@@ -1,0 +1,8 @@
+.span {
+    display:inline-block;
+    margin: 10px;
+    height: 27px;
+    background: url("http://www.facebook.com/images/emoji.php/v9/te8/1/32/270d.png") no-repeat;
+    background-size: 20px 20px;
+    padding-left: 30px;
+}

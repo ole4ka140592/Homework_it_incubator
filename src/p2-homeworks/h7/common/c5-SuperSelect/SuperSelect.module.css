@@ -1,0 +1,17 @@
+.select {
+    width: 45px;
+    height: 23px;
+    margin-left: 4px;
+    border-radius: 5px;
+    border: solid 1px #c7ccd1;
+    font-size: 15px;
+}
+
+.radio {
+    font-size: 15px;
+}
+
+.radio:checked {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+}

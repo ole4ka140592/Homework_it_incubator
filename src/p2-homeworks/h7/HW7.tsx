@@ -3,6 +3,7 @@ import SuperSelect from './common/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 import classes from "./common/c5-SuperSelect/SuperSelect.module.css";
 
+
 const arr = ['x', 'y', 'z']
 
 function HW7() {
@@ -28,7 +29,7 @@ function HW7() {
                     options={arr}
                     value={value}
                     onChangeOption={onChangeOption}
-                    className={classes.radio}
+
                 />
             </div>
 

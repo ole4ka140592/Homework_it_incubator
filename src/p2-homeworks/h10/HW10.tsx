@@ -5,9 +5,10 @@ import {useDispatch, useSelector} from "react-redux";
 import {type} from "os";
 import {AppStoreType} from "./bll/store";
 import {loadingAC, StateType} from "./bll/loadingReducer";
+import preloader from "./images/preloader.gif"
 
 function HW10() {
-    const isLoading = useSelector<AppStoreType, StateType>(state => state.loading)
+    const isLoading = useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
     const dispatch = useDispatch()
 
       const setLoading = () => {
@@ -16,7 +17,7 @@ function HW10() {
 
         setTimeout(()=> {
             dispatch(loadingAC(false))
-        }, 5000)
+        }, 3000)
 
     };
 
@@ -29,10 +30,16 @@ function HW10() {
             {isLoading
                 ? (
 
-                        <div className="loading">Loading</div>
+                        <div >
+                            <img className={classes.preloader} src={preloader}/>
+                        </div>
 
                 ) : (
+
                     <div>
+                        <br/>
+                        <br/>
+                        <br/>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>
                     </div>
                 )

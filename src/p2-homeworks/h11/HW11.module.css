@@ -1,0 +1,28 @@
+.superRange {
+    display: flex;
+}
+
+.superValue1 {
+    margin-right: 5px;
+}
+
+.range {
+    width: 300px;
+}
+
+.superDoubleRange {
+    display: flex;
+
+}
+
+.doubleValue1 {
+    margin-right: 10px;
+}
+
+.doubleRange {
+    width: 300px;
+}
+
+.doubleValue2 {
+    margin-left: 8px;
+}

@@ -4,18 +4,11 @@ import SuperDoubleRange from "./common/c8-SuperDoubleRange/SuperDoubleRange";
 
 
 function HW11() {
-    const [value1, setValue1] = useState(0)
-    const [value2, setValue2] = useState(100)
+    const [value1, setValue1] = useState(11)
+    const [value2, setValue2] = useState(90)
 
-    const onChangeRangeHandler1 = (e: ChangeEvent<HTMLInputElement>) => {
-        setValue1(JSON.parse(e.currentTarget.value))
-        console.log(JSON.parse(e.currentTarget.value))
-    }
-
-    const onChangeRangeHandler2 = (e: ChangeEvent<HTMLInputElement>) => {
-        // setValue1(JSON.parse(e.currentTarget.value))
-        setValue2(JSON.parse(e.currentTarget.value))
-        console.log(JSON.parse(e.currentTarget.value))
+    const onChangeRangeHandler1 = (value: number) => {
+        setValue1(value)
     }
 
 
@@ -27,7 +20,7 @@ function HW11() {
             {/*should work (должно работать)*/}
             <div>
                 <span>{value1}</span>
-                <SuperRange onChange={onChangeRangeHandler1}
+                <SuperRange onChangeRange={onChangeRangeHandler1} value1={value1}
                     // сделать так чтоб value1 изменялось
                 />
             </div>
@@ -35,9 +28,10 @@ function HW11() {
             <div>
                 <span>{value1}</span>
                 <SuperDoubleRange
-                    onChange={onChangeRangeHandler1}
+                    onChangeRange={onChangeRangeHandler1}
                     value1={value1}
                     value2={value2}
+
                 />
                 <span>{value2}</span>
             </div>

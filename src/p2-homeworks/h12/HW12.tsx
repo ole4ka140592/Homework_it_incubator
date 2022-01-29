@@ -5,7 +5,8 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "../h10/bll/store";
 import {changeThemeAC} from "./bll/themeReducer";
 
-const themes = ['dark', 'red', 'some'];
+
+export const themes: Array<string> = ['dark', 'red', 'some'];
 
 function HW12() {
     const theme = useSelector<AppStoreType, string>(state => state.theme); // useSelector
@@ -13,11 +14,13 @@ function HW12() {
     const dispatch = useDispatch()
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-        dispatch(changeThemeAC(e.currentTarget.value))
+        let value = e.currentTarget.value
+        dispatch(changeThemeAC(value))
     }
 
     // useDispatch,
     // onChangeCallback
+
 
     return (
         <div className={s[theme]}>
@@ -28,7 +31,10 @@ function HW12() {
 
             {/*should work (должно работать)*/}
             <div>
-                <SuperSelect options={themes} onChange={onChangeCallback}/>
+                <SuperSelect
+                    options={themes}
+                    onChange={onChangeCallback}
+                />
             </div>
 
             <hr/>

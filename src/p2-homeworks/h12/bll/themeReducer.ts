@@ -18,7 +18,6 @@ export const themeReducer = (state: string = initState, action: ChangeThemeACTyp
 type ChangeThemeACType = ReturnType<typeof changeThemeAC>
 
 export const changeThemeAC = (value: string) => {
-    console.log(value)
     return {
         type: "CHANGE-THEME",
         value
